@@ -33,15 +33,16 @@ end
 gem 'bourbon', '~> 4.0.1'                   # CSS3 Sass mixins
 gem 'neat', '~> 1.6.0'                      # Sass responsive grid
 gem 'font-awesome-rails', '~> 4.2.0'        # Multi-purpose icon fonts
+gem 'sht_rails'                             # js handlebar templates
 
 ###################
 # testing
 ###################
-gem 'guard', group: :development
-gem 'guard-minitest', group: :development
+group :development, :test do
 
-###################
-# js
-###################
-gem 'sht_rails'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'jasmine'
+  gem 'jasmine-jquery-rails'
 
+end
