@@ -4,3 +4,8 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+
+task :jstest do
+`rake jasmine:ci JASMINE_CONFIG_PATH=test/javascripts/support/jasmine.yml`
+end
