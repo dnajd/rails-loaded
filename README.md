@@ -7,6 +7,7 @@ What's it Loaded With?
 * no auto-generation of javascripts and sass
 * configured to auto-run rails tests
 * configured for javascript development including jasmine test runners
+* mocha for stubbing and mocking
 
 ## CSS & JS Libraries
 
