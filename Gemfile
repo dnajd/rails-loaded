@@ -36,6 +36,13 @@ gem 'neat', '~> 1.6.0'                      # Sass responsive grid
 gem 'font-awesome-rails', '~> 4.2.0'        # Multi-purpose icon fonts
 gem 'sht_rails'                             # js handlebar templates
 
+
+###################
+# logging
+###################
+
+gem "lograge"
+
 ###################
 # testing
 ###################

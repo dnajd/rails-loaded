@@ -26,5 +26,40 @@ module RailsLoaded
     # disabling these
     config.generators.stylesheets = false
     config.generators.javascripts = false
+
+    # filter params
+    config.filter_parameters += [:password, :verification]
+
+    ##############################
+    # LOGRAGE
+    ##############################
+    config.lograge.enabled = true
+    config.lograge.custom_options = lambda do |event|
+
+      # params
+      params = event.payload[:params].reject do |k|
+        ['controller', 'action'].include? k
+      end
+
+      # options
+      hash = { time: event.time.iso8601, params: params, remote_ip: event.payload[:ip] }
+
+      return hash
+    end
+
+    # custom formatting
+    def format_value(value)
+      return value.to_s.gsub('"', '\'').strip
+    end
+    config.lograge.formatter = ->(data) do
+      log_s = ""
+      data.each do |key, value|
+        unless key==:time or config.filter_parameters.include? key
+          log_s << "|#{key}=\"#{format_value(value)}\""
+        end
+      end
+      app_name = Module.nesting.last.to_s.underscore
+      "#{data[:time]} app=\"#{app_name}\"#{log_s}"
+    end
   end
 end
