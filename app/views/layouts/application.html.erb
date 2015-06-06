@@ -2,15 +2,40 @@
 <html>
 <head>
   <title>RailsLoaded</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+ <header class="site-header">
   <div class="container">
+
+    <nav class="site-nav" role="navigation">
+      <%= link_to 'https://github.com/dnajd/rails-loaded', class: 'navbar-brand', target: '_blank' do %>
+        rails-loaded
+      <% end %>
+
+      <div class="nav-links">
+        <%= link_to 'Home', '/' %>
+      </div>
+      <div class="mobile-menu"><i class="fa fa-navicon"></i></div>
+
+    </nav>
+
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="container module">
     <%= yield %>
   </div>
+</main>
 
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <%= Time.now.year %> <a href="https://github.com/dnajd/middleman-loaded">middleman-loaded</a></p>
+  </div>
+</footer>
 
   <!-- bottom  -->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

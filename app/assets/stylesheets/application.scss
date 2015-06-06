@@ -8,4 +8,149 @@
   max-width:1024px;
   margin-left:auto;
   margin-right:auto;
+  padding:0 1em;
+}
+
+// ------------------------------------------------------------
+// Layout
+// ------------------------------------------------------------
+
+// A simple, reusable mixin for applying
+// to the top and bottom of an element.
+@mixin section_padding($padding: 1em) {
+  padding: $padding 0;
+}
+
+.site-header {
+  position: relative;
+  @include clearfix;
+  background-color: #EFE8D5;
+}
+
+.site-main {
+  @include section_padding(2em);
+
+  @include media($medium-screen) {
+    @include section_padding(5em);
+  }
+}
+
+.site-footer {
+  @include section_padding(1em);
+  border-top: 1px solid #eee;
+}
+
+// ------------------------------------------------------------
+// Typography
+// ------------------------------------------------------------
+
+h1, h2, h3,
+h4, h5, h6 {
+  line-height: 1; // Set line-height smaller on larger fonts
+}
+
+// ------------------------------------------------------------
+// Site Nav
+// ------------------------------------------------------------
+
+.site-nav {
+  @include clearfix;
+
+  .navbar-brand {
+    display:inline-block;
+    padding:.7em 0 0 0;
+    min-height:50px;
+  }
+
+  .site-logo {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
+
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    float:right;
+
+    @include media($medium-screen) {
+      height: auto;
+    }
+
+    a {
+      @include media($medium-screen) {
+        display: block;
+        float: left;
+        line-height: 0;
+        font-weight: bold;
+        color: #444;
+
+        // I removed the top and bottom padding of the header
+        // and fattened up the touch targets on these links.
+        // Now they're easier to click.
+        padding: 1.5em;
+
+        &:hover {
+          background: #002B36;
+          color: #EFE8D5;
+        }
+      }
+    }
+
+    .nav-right {
+      @include media($medium-screen) {
+        float: right;
+      }
+    }
+  }
+}
+
+// ------------------------------------------------------------
+// Mobile Menu
+// ------------------------------------------------------------
+
+.mobile-menu {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 2;
+
+  @include media($medium-screen) {
+    display: none;
+  }
+
+  i {
+    font-size: 2em;
+    line-height: 0;
+    display: block;
+    color: #002B36;
+  }
+
+  .icon {
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+  }
+}
+
+// Menu active
+.menu-active {
+
+  .nav-links {
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(239,232,213,.95);
+    box-shadow: 0 10px 10px rgba(0,43,54,.4);
+
+    a {
+      display: block;
+      margin: 2em 0;
+      text-align: center;
+      color: #002B36;
+    }
+  }
 }

@@ -17,3 +17,15 @@
 //= require_tree .
 //= require_tree ../../templates
 
+// -------------------------------------------------------------------
+// Init
+// -------------------------------------------------------------------
+
+(function ($) {
+  $(document).ready(function() {
+
+    // Init mobileMenu + options
+   $('.mobile-menu').mobileMenu();
+
+  });
+})(jQuery);
