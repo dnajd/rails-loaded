@@ -9,6 +9,10 @@
   margin-left:auto;
   margin-right:auto;
   padding:0 1em;
+
+  @include media($medium-screen) {
+    padding:auto;
+  }
 }
 
 // ------------------------------------------------------------
@@ -31,7 +35,7 @@
   @include section_padding(2em);
 
   @include media($medium-screen) {
-    @include section_padding(5em);
+    @include section_padding(3em);
   }
 }
 
