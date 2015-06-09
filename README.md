@@ -2,6 +2,8 @@
 
 What's it Loaded With?
 
+# Packages
+
 ## scss & design
 
 | Package           | Description                                  |
@@ -9,6 +11,7 @@ What's it Loaded With?
 | bourbon           | A Sass Mixin Library                         |
 | neat              | Grid framework for Sass and Bourbon          |
 | font-awesome      | Multi-purpose icon fonts                     |
+
 
 ## javascript
 
@@ -29,10 +32,13 @@ What's it Loaded With?
 | rake jasmine      | jasmine tests viewable in localhost:8888     |
 | mocha             | for stubbing and mocking                     |
 
-## misc
+
+# Misc
 
 * A welcome#index controller with bitters html examples
 * A desktop / mobile menu
+* Jasmine config puts tests under /test/javascripts and json fixtures in /test/javascripts/fixtures/json
+
 
 ## JS Components
 
