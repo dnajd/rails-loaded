@@ -33,8 +33,16 @@ What's it Loaded With?
 
 * A welcome#index controller with bitters html examples
 * A desktop / mobile menu
-* JS Components
-** event_facade -  to handle triggering / binding events
-** hbt_facade -  to handle handlebars.js rendering
-** util -  containing methods for mixing objects, debouncing clicks and redirecting
-** mobile_menu
+
+## JS Components
+
+### event_facade
+to handle triggering / binding events
+
+### hbt_facade
+to handle handlebars.js rendering
+
+### utils
+containing methods for mixing objects, debouncing clicks and redirecting
+
+### mobile_menu
