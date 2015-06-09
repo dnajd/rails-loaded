@@ -42,7 +42,7 @@ module RailsLoaded
       end
 
       # options
-      hash = { time: event.time.iso8601, params: params, remote_ip: event.payload[:ip] }
+      hash = { time: event.time.iso8601, params: params, remote_ip: event.payload[:ip], guid: event.payload[:guid] }
 
       return hash
     end
