@@ -28,7 +28,7 @@ What's it Loaded With?
 
 | Package           | Description                                  |
 | ----------------- | -------------------------------------------- |
-| rake guard        | runs rails tests as you code                 |
+| rake guard        | auto-runs rails tests; and jasmine tests     |
 | rake js-test      | jasmine ci tests from command line           |
 | rake jasmine      | jasmine tests viewable in localhost:8888     |
 | mocha             | for stubbing and mocking                     |
