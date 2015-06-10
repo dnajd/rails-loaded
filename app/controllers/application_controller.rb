@@ -17,5 +17,8 @@ class ApplicationController < ActionController::Base
     super
     payload[:host] = request.host
     payload[:guid] = guid
+    payload[:env] = Rails.env.to_s
+    payload[:level] = Rails.logger.level
+
   end
 end

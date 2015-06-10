@@ -10,6 +10,7 @@ What's it Loaded With?
 | ----------------- | -------------------------------------------- |
 | bourbon           | A Sass Mixin Library                         |
 | neat              | Grid framework for Sass and Bourbon          |
+| bitters           | Stock styles / stylesheets using smacks      |
 | font-awesome      | Multi-purpose icon fonts                     |
 
 

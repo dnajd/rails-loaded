@@ -42,7 +42,12 @@ module RailsLoaded
       end
 
       # options
-      hash = { time: event.time.iso8601, params: params, remote_ip: event.payload[:ip], guid: event.payload[:guid] }
+      hash = {
+        time: event.time.iso8601
+      }
+      event.payload.each do |key, value|
+        hash[key] = value unless [:params, :view_runtime, :db_runtime].include? key
+      end
 
       return hash
     end
