@@ -123,3 +123,4 @@ boot_files:
 # rack_options:
 #   server: 'thin'
 
+fixtures_path: test/javascripts/fixtures/json

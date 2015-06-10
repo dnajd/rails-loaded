@@ -1,5 +1,21 @@
 describe('HbtFacade', function() {
 
+  jasmine.getJSONFixtures().fixturesPath = "test/javascripts/fixtures/sample";
+  jasmine.getFixtures().fixturesPath = "test/javascripts/fixtures/sample";
+
+  beforeEach(function() {
+
+    // clear all events
+    facade = new EventFacade();
+    facade.unbindAll();
+
+    fixtures = {
+      json: getJSONFixture('welcome.json')
+    }
+
+    loadFixtures('welcome.html') // html in dom
+  });
+
   it('should render template with div and welcome message', function() {
 
     // construct
@@ -7,11 +23,11 @@ describe('HbtFacade', function() {
     expect(facade).not.toBe(null);
 
     // render
-    html = facade.render('sample/welcome', { message: 'hello'} );
+    html = facade.render('sample/welcome', fixtures.json );
+    $('#welcome-container').append(html);
 
     // div?
-    element = $(html).find('div');
-    expect(element).not.toBe(null);
+    expect($('#template-div')).not.toBe(null);
 
   });
 });
