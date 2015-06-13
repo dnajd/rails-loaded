@@ -1,9 +1,9 @@
 describe('HbtFacade', function() {
 
-  jasmine.getJSONFixtures().fixturesPath = "test/javascripts/fixtures/sample";
-  jasmine.getFixtures().fixturesPath = "test/javascripts/fixtures/sample";
-
   beforeEach(function() {
+
+    jasmine.getJSONFixtures().fixturesPath = "test/javascripts/fixtures/sample";
+    jasmine.getFixtures().fixturesPath = "test/javascripts/fixtures/sample";
 
     // clear all events
     facade = new EventFacade();
