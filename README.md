@@ -1,20 +1,17 @@
 # rails-loaded
 
-What's it Loaded With?
+## Develop runtimes
 
-# Packages
-
-## scss & design
-
-| Package           | Description                                  |
-| ----------------- | -------------------------------------------- |
-| bourbon           | A Sass Mixin Library                         |
-| neat              | Grid framework for Sass and Bourbon          |
-| bitters           | Stock styles / stylesheets using smacks      |
-| font-awesome      | Multi-purpose icon fonts                     |
+    $ rails server
+    $ grunt
+    $ guard
+    $ rake jasmine
 
 
-## javascript
+## Packages
+
+
+#### Gems • `bundle install --path=vendor`
 
 | Package           | Description                                  |
 | ----------------- | -------------------------------------------- |
@@ -22,34 +19,58 @@ What's it Loaded With?
 | jasmine           | framework for testing JavaScript code        |
 | handlebars        | javascript templates                         |
 | sht_rails         | Shared handlebars templates; js templating   |
+| bourbon           | A Sass Mixin Library                         |
+| neat              | Grid framework for Sass and Bourbon          |
+| bitters           | Stock styles / stylesheets using smacks      |
+| font-awesome      | Multi-purpose icon fonts                     |
 
 
-## testing
+#### Bower • `bower install`
 
 | Package           | Description                                  |
 | ----------------- | -------------------------------------------- |
+| animate.css       | CSS animation library                        |
+| spin.js           | loading spinners                             |
+
+
+#### Grunt • `npm install`
+
+| Package           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| jshint            | javascript validation                        |
+| [jsdoc](http://usejsdoc.org/) | generate docs from js comments   |
+
+
+## Testing
+
+| Package           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| grunt             | jsHint, jsdoc                                |
 | rake guard        | auto-runs rails tests; and jasmine tests     |
 | rake js-test      | jasmine ci tests from command line           |
 | rake jasmine      | jasmine tests viewable in localhost:8888     |
 | mocha             | for stubbing and mocking                     |
 
 
-# Misc
-
-* A welcome#index controller with bitters html examples
-* A desktop / mobile menu
-* Jasmine config puts tests under /test/javascripts and json fixtures in /test/javascripts/fixtures/json
-
-
 ## JS Components
 
-### event_facade
-to handle triggering / binding events
+| Package           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| event_facade      | to handle triggering / binding events        |
+| hbt_facade        | to handle handlebars.js rendering            |
+| utils             | containing methods for mixing objects, debouncing clicks and redirecting |
+| mobile_menu       | rwd menu for phones                          |
 
-### hbt_facade
-to handle handlebars.js rendering
 
-### utils
-containing methods for mixing objects, debouncing clicks and redirecting
+## Misc
 
-### mobile_menu
+- A welcome#index controller with bitters html examples
+- Jasmine config puts tests under `/test/javascripts` and json fixtures in `/test/javascripts/fixtures/json`
+
+# Environments
+
+## Mac El Capitan
+
+May need to follow these instructions for v8 and ruby racer
+
+http://stackoverflow.com/questions/33475709/install-therubyracer-gem-on-osx-10-11-el-capitan#

@@ -9,11 +9,22 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+
+// GEMS
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require handlebars
+
+// BOWER
+
+// spin.js
+//= require spin.js/spin.js
+//= require spin.js/jquery.spin.js
+
+// TREE
+
 //= require_tree .
 //= require_tree ../../templates
 

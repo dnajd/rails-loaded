@@ -247,7 +247,7 @@ DEPENDENCIES
   sht_rails
   spring
   sqlite3
-  therubyracer (~> 0.12)
+  therubyracer
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

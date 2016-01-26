@@ -24,7 +24,7 @@ HbtFacade.fn.render = function(template, data) {
   }
 
   return SHT[template](data);
-}
+};
 
 /**
  * @function HbtFacade.debug

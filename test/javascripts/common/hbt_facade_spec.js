@@ -11,9 +11,9 @@ describe('HbtFacade', function() {
 
     fixtures = {
       json: getJSONFixture('welcome.json')
-    }
+    };
 
-    loadFixtures('welcome.html') // html in dom
+    loadFixtures('welcome.html'); // html in dom
   });
 
   it('should render template with div and welcome message', function() {

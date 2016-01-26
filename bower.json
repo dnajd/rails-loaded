@@ -1,0 +1,9 @@
+{
+  "name": "rails-loaded",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "animate.css": "https://github.com/daneden/animate.css.git",
+    "spin.js": "https://github.com/fgnass/spin.js.git#~2.0.2"
+  }
+}
