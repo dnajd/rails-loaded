@@ -74,3 +74,7 @@
 May need to follow these instructions for v8 and ruby racer
 
 http://stackoverflow.com/questions/33475709/install-therubyracer-gem-on-osx-10-11-el-capitan#
+
+or try uninstalling everything and doing this
+
+http://stackoverflow.com/questions/33343159/gem-install-therubyracer-v-0-11-4?rq=1
