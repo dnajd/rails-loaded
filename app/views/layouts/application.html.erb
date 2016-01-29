@@ -2,6 +2,11 @@
 <html>
 <head>
   <title>RailsLoaded</title>
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width">
+
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -13,8 +18,19 @@
         rails-loaded
       <% end %>
 
-      <div class="nav-links">
-        <%= link_to 'Home', '/' %>
+      <ul class="nav-links">
+        <li><%= link_to 'Home', '/' %>
+          <ul></ul>
+        </li>
+        <li><i class="fa fa-angle-double-right"></i><%= link_to 'Github', 'https://github.com/dnajd/rails-loaded' %>
+          <ul>
+            <li><a href="https://github.com/dnajd/rails-loaded">Rails</a></li>
+            <li><a href="https://github.com/dnajd/middleman-loaded">Middleman</a></li>
+            <li><a href="https://github.com/dnajd/ruby_tester">Ruby Tester</a></li>
+            <li><a href="https://github.com/dnajd/load_runner">Load Runner</a></li>
+          </ul>
+        </li>
+      </ul>
       </div>
       <div class="mobile-menu"><i class="fa fa-navicon"></i></div>
 

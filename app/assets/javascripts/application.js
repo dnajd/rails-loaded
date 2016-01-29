@@ -32,11 +32,14 @@
 // Init
 // -------------------------------------------------------------------
 
-(function ($) {
-  $(document).ready(function() {
 
-    // Init mobileMenu + options
-   $('.mobile-menu').mobileMenu();
+$(document).ready(function() {
 
+  var mobileMenu = new MobileMenu({
+    gripper: $('.mobile-menu'),
+    container: $('nav')
   });
-})(jQuery);
+
+  mobileMenu.init();
+
+});
