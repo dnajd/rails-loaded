@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------
 
 $container                 : $max-width;
-$container-mobile_only     : max-width $max-width - $one-pixel;
+$container-mobile_only     : max-width em($max-width) - $one-pixel;
 $container-narrow          : 60em; // 960px
 $container-super-narrow    : 45em; // 720px
 
