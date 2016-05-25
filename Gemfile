@@ -30,11 +30,10 @@ group :development do
 end
 
 group :development, :test do
-
-  gem 'sqlite3'                     # Use sqlite3 as the database for Active Record
-  #gem 'byebug'                      # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  #gem 'spring'                      # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'mocha'                       # mocking in tests
+  gem 'sqlite3'               # Use sqlite3 as the database for Active Record
+  gem 'byebug'                # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'spring'                # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'mocha'                 # mocking in tests
   gem 'faker'
 end
 
