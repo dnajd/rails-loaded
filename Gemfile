@@ -9,7 +9,8 @@ gem 'sass-rails'                  # Use SCSS for stylesheets
 gem 'uglifier'             				# Use Uglifier as compressor for JavaScript assets
 
 gem 'coffee-rails'                # Use CoffeeScript for .coffee assets and views
-gem 'sprockets-rails', '< 3.0'
+gem 'sprockets-rails'
+
 # gem 'therubyracer', platforms: :ruby 	# See https://github.com/rails/execjs#readme for more supported runtimes
 
 gem 'jquery-rails'						        # Use jquery as the JavaScript library
@@ -41,11 +42,10 @@ end
 # design
 ###################
 
-gem 'bourbon'                               # CSS3 Sass mixins
-gem 'neat'                                  # Sass responsive grid]
-gem 'refills'                               # refills
+gem 'bourbon','4.0.1'                       # CSS3 Sass mixins
+gem 'neat','1.6.0'                          # Sass responsive grid]
 gem 'font-awesome-rails'                    # Multi-purpose icon fonts
-gem 'sht_rails'                             # js handlebar templates
+gem 'handlebars_assets'                     # js handlebar templates
 
 ###################
 # logging

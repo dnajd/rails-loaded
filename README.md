@@ -18,7 +18,7 @@
 | jquery            | The Write Less, Do More, JavaScript Library  |
 | jasmine           | framework for testing JavaScript code        |
 | handlebars        | javascript templates                         |
-| sht_rails         | Shared handlebars templates; js templating   |
+| handlebars_assets | Shared handlebars templates; js templating   |
 | bourbon           | A Sass Mixin Library                         |
 | neat              | Grid framework for Sass and Bourbon          |
 | bitters           | Stock styles / stylesheets using smacks      |
